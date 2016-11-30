@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "intent": "LastIssueIntent"
+    },
+    {
+      "intent": "AckIssueIntent"
+    },
+    {
+      "intent": "ResIssueIntent"
+    },
+    {
+      "intent": "EscIssueIntent"
+    },
+    {
+      "intent": "VerifyIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

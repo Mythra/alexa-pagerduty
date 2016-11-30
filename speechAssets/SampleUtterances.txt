@@ -1,0 +1,29 @@
+LastIssueIntent what was that issue
+LastIssueIntent what was that pagerduty
+LastIssueIntent what is on fire
+LastIssueIntent what problem is happening on pagerduty
+LastIssueIntent what is happening on pagerduty
+LastIssueIntent pagerduty problem
+
+AckIssueIntent acknowledge that issue
+AckIssueIntent acknowledge that pagerduty
+AckIssueIntent acknowledge that
+AckIssueIntent ack that issue
+AckIssueIntent ack that pagerduty
+AckIssueIntent ack that
+
+ResIssueIntent resolve that issue
+ResIssueIntent resolve that pagerduty
+ResIssueIntent resolve that
+ResIssueIntent no one cares
+ResIssueIntent screw that
+
+EscIssueIntent escalate that issue
+EscIssueIntent escalate that pagerduty
+EscIssueIntent escalate that
+EscIssueIntent make that someone else's problem
+
+VerifyIntent yes I'm sure
+VerifyIntent yes
+VerifyIntent verified
+VerifyIntent verify

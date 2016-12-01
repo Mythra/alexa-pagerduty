@@ -68,17 +68,22 @@ PagerdutySkill.prototype.intentHandlers = {
 };
 
 function handleLastIssueIntent(session, response) {
+  var latestIssueTitle = "The Main Building is on fire";
 
+  response.tell("The last issue was: " + latestIssueTitle);
 }
 
 function handleAckIssueIntent(session, response) {
 
+  response.tell("Issue has been acknowledged");
 }
 
 function handleResIssueIntent(session, response) {
 
+  response.tell("Issue has been resolved");
 }
 
 function handleEscIssueIntent(session, response) {
 
+  response.tell("Issue has been escalated");
 }

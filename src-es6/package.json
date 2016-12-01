@@ -1,0 +1,42 @@
+{
+  "name": "Alexa-Pagerduty",
+  "description": "An AWS Lambda for Alexa Pagerduty",
+  "version": "0.1.0",
+  "author": "Instructure Operations <ops@instructure.com>",
+  "dependencies": {
+    "aws-sdk": "^2.7.9",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-latest": "^6.16.0",
+    "json-loader": "^0.5.4",
+    "node-lambda": "^0.8.11",
+    "webpack": "^1.13.3",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "keywords": [
+    "aws",
+    "babel",
+    "es6",
+    "lambda",
+    "alexa",
+    "pagerduty",
+    "echo",
+    "echo dot"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "package": "node-lambda package --handler dist/index.default --configFile deploy.env --functionName $npm_package_name -x \"./index.js ./AlexaSkill.js ./Dynamo.js ./Pagerduty.js ./yarn.lock ./build/* webpack.config.js context.json event.json .babelrc .nvmrc .gitignore LICENSE.md README.md\" && ./finalize-build.sh",
+    "postinstall": "node-lambda setup",
+    "predeploy": "NODE_ENV=production webpack -p",
+    "prepackage": "rm -rf build/ && NODE_ENV=production webpack -p",
+    "pretest": "webpack",
+    "setup": "node-lambda setup",
+    "start": "webpack --watch",
+    "test-run": "eval $([ -f deploy.env ] && cat deploy.env) node-lambda run --handler dist/index.default",
+    "webpack": "webpack"
+  }
+}

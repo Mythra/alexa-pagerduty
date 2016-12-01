@@ -22,8 +22,3 @@ EscIssueIntent escalate that issue
 EscIssueIntent escalate that pagerduty
 EscIssueIntent escalate that
 EscIssueIntent make that someone else's problem
-
-VerifyIntent yes I'm sure
-VerifyIntent yes
-VerifyIntent verified
-VerifyIntent verify
